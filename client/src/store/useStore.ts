@@ -1,13 +1,21 @@
 import { create } from 'zustand';
 
 interface SearchState {
-    query: string;
-    setQuery: (query: string) => void;
+	query: string;
+	setQuery: (query: string) => void;
 }
 
-const useSearchStore = create<SearchState>((set) => ({
-    query: '',
-    setQuery: (query) => set({ query }),
+export const useSearchStore = create<SearchState>((set) => ({
+	query: '',
+	setQuery: (query) => set({ query }),
 }));
 
-export default useSearchStore;
+interface NavbarState {
+	isOpen: boolean;
+	toggleMenu: () => void;
+}
+
+export const useNavbarStore = create<NavbarState>((set) => ({
+	isOpen: false,
+	toggleMenu: () => set((state) => ({ isOpen: !state.isOpen })),
+}));

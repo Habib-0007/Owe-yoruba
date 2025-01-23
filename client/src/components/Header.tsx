@@ -1,14 +1,23 @@
 import React from 'react';
+import Navbar from "../components/Navbar.tsx"
+import { Menu } from "lucide-react"
+import { useNavbarStore } from "../store/useStore"
 
 const Header: React.FC = () => {
-    return (
-        <header className="bg-gray-900 text-white py-6">
-            <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-3xl font-bold">Yoruba Proverbs API</h1>
-                <p className="text-gray-400">Explore the wisdom of Yoruba proverbs</p>
-            </div>
-        </header>
-    );
+	const { toggleMenu } = useNavbarStore()
+	return (
+		<header className="grid grid-cols-12 py-[16px] px-[14px] shadow-sm shadow-gray-300/50
+		relative bg-white">
+			<section className="col-start-1 col-end-13 md:col-start-2 md:col-end-12 flex
+			justify-between items-center gap-[auto]">
+				<h1 className="text-[24px] font-bold">Owé Yoruba</h1>
+				<button className="font-bold md:hidden" onClick={() => toggleMenu()}>
+					<Menu size={32} />
+				</button>
+				<Navbar />
+			</section>
+		</header>
+	);
 };
 
 export default Header;

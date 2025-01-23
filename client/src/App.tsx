@@ -1,5 +1,7 @@
 import React from 'react';
+import "./App.css"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './pages/Homepage';
 import Landing from './pages/Landing';
 import GetProverbs from './pages/GetProverbs';
 import GetProverbById from './pages/GetProverbById';
@@ -11,7 +13,8 @@ const App: React.FC = () => {
 	return (
 		<Router>
 			<Routes>
-				<Route path="/" element={<Landing />} />
+				<Route path="/" element={<Homepage />} />
+				<Route path="/landing" element={<Landing />} />
 				<Route path="/docs/get-proverbs" element={<GetProverbs />} />
 				<Route path="/docs/get-proverb-by-id" element={<GetProverbById />} />
 				<Route path="/docs/post-proverb" element={<PostProverb />} />

@@ -1,19 +1,29 @@
 import React from 'react';
+import { useNavbarStore } from "../store/useStore"
 import { Link } from "react-router-dom"
-import { Home, Search } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const Navbar: React.FC = () => {
+	const { isOpen } = useNavbarStore()
 	return (
-		<nav className="bg-gray-800 text-white p-4 flex justify-between items-center">
-			<h1 className="text-2xl font-bold"> Owé Yoruba API</h1>
-			<div className="flex gap-4">
-				<Link to="/" className="flex items-center gap-1">
-					<Home size={20} /> Home
-				</Link>
-				{/*	<a href="/search" className="flex items-center gap-1">
-					<Search size={20} /> Search
-				</a> */ }
-			</div>
+		<nav className={`p-4 flex justify-between items-center gap-[12px]
+		md:gap-[16px] absolute top-[70px] left-0 bg-white z-50 w-full md:static
+		md:w-autotransition-transform duration-1000 ${isOpen ? "translate-y-0" :
+				"-translate-y-96 md:translate-y-0"
+			}`}>
+			<Link to="/" className="flex items-center gap-1 text-[16px] pl-[16px] py-[8px]">
+				Home
+			</Link>
+			<Link href="/docs" className="flex items-center gap-1 text-[16px] px-[16px]
+			py-[8px]">
+				Docs
+			</Link>
+			<Link href="https://github.com/Habib-007/owe-yoruba/" className="flex
+			justify-center
+			items-center gap-[6px] bg-black text-white px-[16px] py-[8px] rounded-md
+			text-[16px]">
+				<Github size={20} /> Github
+			</Link>
 		</nav>
 	);
 };
