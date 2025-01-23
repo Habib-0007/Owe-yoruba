@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import useSearchStore from '../store/useStore';
+import { useState } from 'react';
+import {useSearchStore} from '../store/useStore';
 
 const SearchBar: React.FC = () => {
     const [localQuery, setLocalQuery] = useState('');

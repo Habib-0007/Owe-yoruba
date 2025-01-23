@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from "../components/Navbar.tsx"
 import { Menu } from "lucide-react"
 import { useNavbarStore } from "../store/useStore"

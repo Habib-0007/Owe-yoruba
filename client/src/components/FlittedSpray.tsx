@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FlittedSpray = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-blue-100 via-white to-pink-100 text-center">

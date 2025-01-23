@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavbarStore } from "../store/useStore"
 import { Link } from "react-router-dom"
 import { Github } from 'lucide-react';
@@ -14,11 +13,11 @@ const Navbar: React.FC = () => {
 			<Link to="/" className="flex items-center gap-1 text-[16px] pl-[16px] py-[8px]">
 				Home
 			</Link>
-			<Link href="/docs" className="flex items-center gap-1 text-[16px] px-[16px]
+			<Link to="/docs" className="flex items-center gap-1 text-[16px] px-[16px]
 			py-[8px]">
 				Docs
 			</Link>
-			<Link href="https://github.com/Habib-007/owe-yoruba/" className="flex
+			<Link to="https://github.com/Habib-007/owe-yoruba/" className="flex
 			justify-center
 			items-center gap-[6px] bg-black text-white px-[16px] py-[8px] rounded-md
 			text-[16px]">
