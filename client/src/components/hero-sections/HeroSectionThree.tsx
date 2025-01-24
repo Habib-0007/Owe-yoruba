@@ -6,8 +6,8 @@ const HeroSectionThree = () => {
 			minHeight: "calc(100vh - 100px)"
 		}} className="flex flex-col justify-center items-center gap-[16px]
 		bg-gradient-to-br from-purple-200 via-white to-white text-center p-[14px]">
-			<h3 className="font-extrabold text-[28px] text-black">Ready-to-Use Proverbs for Your Projects</h3>
-			<p className="mt-[10px] text-[16px] leading-1">Lorem ipsum dolor sit amet,
+			<h3 className="font-extrabold text-[24px] text-black">Ready-to-Use Proverbs for Your Projects</h3>
+			<p className="mt-[10px] text-[14px] leading-1">Lorem ipsum dolor sit amet,
 				consectetur adipisicing elit. Sunt quis mollitia numquam nihil ab.</p>
 			<Link to="/docs" className="border-2 border-black flex	justify-center
 			items-center bg-purple-200 text-black px-[16px] py-[8px] rounded-lg

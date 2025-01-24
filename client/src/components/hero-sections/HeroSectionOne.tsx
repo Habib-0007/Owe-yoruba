@@ -7,9 +7,9 @@ const HeroSectionOne = () => {
 			minHeight: "calc(100vh - 100px)"
 		}} className="flex flex-col justify-center items-center gap-[30px]	bg-gradient-to-tr from-purple-200 via-white to-white text-center p-[14px]">
 			<div className="flex flex-col justify-center items-center gap-[6px]">
-				<h3 className="font-extrabold text-[28px] text-black">Free REST API for Yoruba Proverbs</h3>
-				<strong className="text-[18px]">Say, Translate, Meaning.</strong>
-				<p className="mt-[10px] text-[16px] leading-1">Lorem ipsum dolor sit amet, consectetur adipisicing
+				<h3 className="font-extrabold text-[24px] text-black">Free REST API for Yoruba Proverbs</h3>
+				<strong className="text-[16px]">Say, Translate, Meaning.</strong>
+				<p className="mt-[10px] text-[14px] leading-1">Lorem ipsum dolor sit amet, consectetur adipisicing
 					elit. Tenetur illo, provident cum tempora recusandae.</p>
 			</div>
 			<div className="flex flex-col justify-center items-center gap-[14px]">
@@ -23,7 +23,7 @@ const HeroSectionOne = () => {
 			shadow-[5px_3px_0_0_rgba(0,0,0,1)] hover:shadow-none hover:-translate-y-0.5
 			hover:-translate-x-0.5 transition-all duration-200">Read
 					Docs</Link>
-				<p>Serving <strong>x numbers of</strong> requests monthly</p>
+				<p className="text-[10px]">Serving <strong>x numbers of</strong> requests monthly</p>
 			</div>
 		</section>
 	)
